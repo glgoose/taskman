@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FAFAFA;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.wrap {
+  margin: auto;
+  margin-top: 2em;
+  max-width: 800px;
+  width: 90%;
+}
+
+.principal {
+  background: #F44336;
+  border-top: 20px solid #D32F2F;
+  color: #fff;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.principal .form {
+  color: #212121;
+  text-align: center;
+}
+
+.principal .form input[type=text] {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.principal .form input[type=text].error {
+  border: 5px solid #D32F2F;
+  color: red;
+}
+
+.principal .form .button {
+  background: none;
+  border: 1px solid #D32F2F;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px;
+}
+
+.principal .form .button:hover {
+  border: 1px solid #fff;
+}
+
+/* - tasks - */
+.task {
+  color: #212121;
+  display: block;
+  padding: 0.3em 0;
+  text-decoration: none;
+  border-bottom: 1px solid #B6B6B6;
+}
+
+.tasks .list {
+  list-style: none;
+}
+
+.checkbox {
+  margin-right: 0.4em;
+  cursor: pointer;
+}
+
+.task[data-is-done="1"] .title {
+  text-decoration: line-through;
+}
+
+.title:hover + .delete, .delete:hover {
+  display: inline;
+}
+
+.delete {
+  display: none;
+  color: red;
+  font-weight: bold;
+  padding: 0 0.4em;
+  cursor: pointer;
+}

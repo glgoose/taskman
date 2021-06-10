@@ -1,0 +1,24 @@
+POST http://localhost:8080/api/task/create
+Content-Type: application/json
+
+{
+  "title": "fix errors as",
+  "isDone": "false"
+}
+
+###
+POST http://localhost:8080/api/task/update/done
+Content-Type: application/json
+
+{
+  "id": 21,
+  "isDone": 1
+}
+
+###
+POST http://localhost:8080/api/task/delete
+Content-Type: application/json
+
+{
+  "id": 16
+}
